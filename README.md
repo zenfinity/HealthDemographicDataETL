@@ -6,14 +6,17 @@ For our project we are using data from the CDC - National Health and Examination
 
 The columns in each data set had variable names. We started our project by creating a variable database for column names. This allowed us to determine which columns we wanted to keep in our final database. 
 
+Establish a database schema:
+
+
 EXTRACT: The CSV files were loaded. Copies are in the Resources folder
 1. demographics.csv
 2. examination.csv
 
 TRANSFORM:
 1. Demographics 
-- Filter data to narrow down focus (Xray results, oral health)
-- Rename columns (variable name to descriptor)
+- Filter data to narrow down focus (ex. Xray results, oral health). The data set had over 200 columns, these were narrowed down to a more manageable number. 
+- Rename columns (variable name to descriptor) in Excel. 
 2. Examination
 - Filter data to narrow down data focus (CA data and census data)
 - Rename columns (variable name to descriptor) 
