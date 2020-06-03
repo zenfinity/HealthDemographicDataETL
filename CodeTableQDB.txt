@@ -1,0 +1,109 @@
+Examination
+-
+SEQN INT PK
+BP_Systolic_mmHg INT
+BP_Diastolic_mmHg INT
+Weight_kg DECIMAL
+Height_cm DECIMAL
+BMI_kg_m2 DECIMAL
+Dominate_Hand VARCHAR
+Grip_Strength_H2_kg DECIMAL
+Grip_Strength_H1_kg DECIMAL
+Leather_Odor INT FK >- Leather_Odor_Code.code_or_value
+Onion_Odor INT FK >- Onion_Odor_Code.code_or_value
+Natural_Gas_Odor INT FK >- Natural_Gas_Odor_Code.code_or_value
+
+Demographics
+-
+SEQN INT PK
+Gender VARCHAR(255)
+Age INT
+Race INT FK >- Race_Code.code_or_value
+US_Citizen INT FK >- US_Citizen_Code.code_or_value
+Years_In_US INT FK >- Years_In_US_Code.code_or_value
+Schooling_Youth INT FK >- Schooling_Youth_Code.code_or_value
+Schooling_Adult INT FK >- Schooling_Adult_Code.code_or_value
+Marital_Status INT FK >- Marital_Status_Code.code_or_value
+Pregnant VARCHAR
+Num_Family INT
+Interview_Weight DECIMAL
+Exam_Weight DECIMAL
+Income INT FK >- Income_Code.code_or_value
+
+Health_Study
+-
+SEQN INT PK
+BP_Systolic_mmHg INT
+BP_Diastolic_mmHg INT
+Weight_kg DECIMAL
+Height_cm DECIMAL
+BMI_kg_m2 DECIMAL
+Dominate_Hand VARCHAR
+Grip_Strength_H2_kg DECIMAL
+Grip_Strength_H1_kg DECIMAL
+Leather_Odor INT FK >- Leather_Odor_Code.code_or_value
+Onion_Odor INT FK >- Onion_Odor_Code.code_or_value
+Natural_Gas_Odor INT FK >- Natural_Gas_Odor_Code.code_or_value
+Gender VARCHAR(255)
+Age INT
+Race INT FK >- Race_Code.code_or_value
+US_Citizen INT FK >- US_Citizen_Code.code_or_value
+Years_In_US INT FK >- Years_In_US_Code.code_or_value
+Schooling_Youth INT FK >- Schooling_Youth_Code.code_or_value
+Schooling_Adult INT FK >- Schooling_Adult_Code.code_or_value
+Marital_Status INT FK >- Marital_Status_Code.code_or_value
+Pregnant VARCHAR
+Num_Family INT
+Interview_Weight DECIMAL
+Exam_Weight DECIMAL
+Income INT FK >- Income_Code.code_or_value
+
+Leather_Odor_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
+
+
+Natural_Gas_Odor_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
+
+US_Citizen_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
+
+Marital_Status_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
+
+Years_In_US_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
+
+Income_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
+
+Race_Code
+-
+code_or_value INTEGER PK
+value_description VARCHAR
+count INTEGER
+cumulative INTEGER
