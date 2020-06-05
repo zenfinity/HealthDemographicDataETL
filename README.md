@@ -10,9 +10,10 @@ These are the steps that were taken:
 
 Establish a database schema using [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
 
-[Schema](ERD.jpg)
+![ERD.png](ERD.png)
 
 The data was exported to predefine the database in PostgresSQL see [Table_Setup_New.sql](Table_Setup_New.sql)
+
 EXTRACT: The CSV files were loaded. Original copies are located in the Resources folder.
 1. demographic.csv - [source kaggle.com](https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?select=demographic.csv)
 2. examination.csv - [source kaggle.com](https://www.kaggle.com/cdc/national-health-and-nutrition-examination-survey?select=examination.csv)
@@ -23,6 +24,7 @@ TRANSFORM:
 - The CSV files were formated where many columns had a code, with a seperate reference table, instead of actual values listed in each row. Some of these values (gender, family size & if pregnant) were replaced using the find/replace function in Excel. The rest will have reference tables that will be added to our final data set as seperate tables. These reference tables will be added to our final data base.  
 - Create SQL code to create code tables
 - Rename columns (variable name to descriptor) in Excel. [demographic_modified_renamed_columns.csv](Resources/demographic_modified_renamed_columns.csv)
+- Any records with a null value were deleted using PGAdmin
 
 
 
@@ -32,6 +34,7 @@ TRANSFORM:
 - Create CSV files for reference tables
 - Rename columns (variable name to descriptor) in Excel. [examination_modified_renamed_columns.csv](Resources/examination_modified_renamed_columns.csv)
 - Some categories were left, even if not all rows were filled in, based on the documentation provided with the data set. 
+- Any records with a null value were deleted using PGAdmin
 
 
 LOAD: PostgreSQL
