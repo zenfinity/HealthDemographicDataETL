@@ -10,7 +10,7 @@ These are the steps that were taken:
 
 Establish a database schema using [quickdatabasediagrams.com](https://www.quickdatabasediagrams.com/)
 
-![ERD.png](ERD.png)
+![ERD.PNG](ERD.PNG)
 
 The data was exported to predefine the database in PostgresSQL see [Table_Setup_New.sql](Table_Setup_New.sql)
 
