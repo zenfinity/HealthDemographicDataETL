@@ -26,7 +26,7 @@ TRANSFORM:
 - Filter data to narrow down focus (ex. Xray results and oral health). The data set had over 200 columns, these were narrowed down to a more manageable number. This filtering was done in Excel. [demographic_modified.csv](Resources/demographic_modified.csv), [examination_modified.csv](Resources/examination.csv)
 - The CSV files were formated where many columns had a code, with a seperate reference table, instead of actual values listed in each row. Some of these values (gender, family size & if pregnant) were replaced using the find/replace function in Excel. The rest will have reference tables that will be added to our final data set as seperate tables. These reference tables will be added to our final data base.  
 - Rename columns (variable name to descriptor) in Excel. [demographic_modified_final.csv](Resources/demographic_modified_final.csv), [examination_modified_final.csv](Resources/examination_modified_final.csv)
-- Establish tables using SQL code and insert values into tables for foreign keys [Table_Setup_New.sql](Table_Setup_New.sql)
+- Establish tables using SQL code and insert values into tables for foreign keys [Table_Setup.sql](Table_Setup.sql)
 - Import Demographics and Examination csv files into respective tables 
 - Create temp table to join Demographics and Examination tables [Clean_Up.sql](Clean_Up.sql) 
 
