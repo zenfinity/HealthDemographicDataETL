@@ -1,10 +1,14 @@
-Project 2: ETL Challenge
+# Project 2: ETL Challenge
 
-Briana Friendt, Haley Huhtala, Ian Mac Moore and Kaylene Retka
+Briana Friendt, Haley Huhtala, Ian Mac Moore, and Kaylene Retka
+
+# Summary
 
 For our project we are using data from the CDC - National Health and Examination Health Survey (2013-2014). We started by exploring the data and determining which of the 6 data sets we wanted to use. We selected the demographic data set and examination data set. 
 
 The columns in each data set had variable names. We started our project by creating a variable workbook for the column names [Data_Dictionary.xlsx](Data_Dictionary.xlsx). This allowed us to determine which columns we wanted to keep in our final database. The ETL process will create a normalized database with 10 tables in PostgreSQL. 
+
+# Method
 
 These are the steps that were taken:
 
